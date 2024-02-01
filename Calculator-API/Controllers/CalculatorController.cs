@@ -8,48 +8,47 @@ namespace CalcAPI.Controllers;
 
 public class CalculatorController : ControllerBase
 {
-    [HttpGet]
-    public decimal Add(decimal num1, decimal num2)
+
+    private string GetResultMessage(decimal result, string operation)
     {
-        decimal result = num1 + num2;
-        return result;
+        return $"Result: = {result} \nOperation performed:{operation}";
+    }
+    
+    [HttpGet]
+    public string Add(decimal num1, decimal num2)
+    {
+        return GetResultMessage(num1 + num2, "Addition");
     }
 
     [HttpGet]
-    public decimal Subtract(decimal num1, decimal num2)
+    public string Subtract(decimal num1, decimal num2)
     {
-        decimal result = num1 - num2;
-        return result;
+        return GetResultMessage(num1 - num2, "Subtraction");
     }
 
     [HttpGet]
-    public decimal Multiply(decimal num1, decimal num2)
+    public string Multiply(decimal num1, decimal num2)
     {
-        decimal result = num1 * num2;
-        return result;
+        return GetResultMessage(num1 * num2, "Multiplication");
     }
 
     [HttpGet]
-    public ActionResult Divide(decimal num1, decimal num2)
+    public string Divide(decimal num1, decimal num2)
     {
         if (num2 == 0)
         {
-            return BadRequest("Cannot divide by zero.");
+            return "Cannot divide by zero.";
         }
-
-        decimal result = num1 / num2;
-        return Ok(result);
+            return GetResultMessage(num1 / num2, "Division");
     }
 
     [HttpGet]
-    public ActionResult Quotient(decimal num1, decimal num2)
+    public string Quotient(decimal num1, decimal num2)
     {
         if (num2 == 0)
         {
-            return BadRequest("Cannot calculate quotient with zero divisor.");
+            return "Cannot calculate quotient with zero divisor.";
         }
-
-        decimal remainder = num1 % num2;
-        return Ok(remainder);
+        return GetResultMessage(num1 %  num2, "Division");
     }
 }
