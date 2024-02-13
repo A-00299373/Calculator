@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CalcAPI.Controllers;
+namespace CalculatorAPI.Controllers
 
-
+{
 [ApiController]
 [Route("[controller]/[action]")]
 
@@ -11,7 +11,7 @@ public class CalculatorController : ControllerBase
 
     private string GetResultMessage(decimal result, string operation)
     {
-        return $"Result: = {result} \nOperation performed:{operation}";
+        return $"Result: = {result} \nOperation performed: {operation}";
     }
     
     [HttpGet]
@@ -51,4 +51,5 @@ public class CalculatorController : ControllerBase
         }
         return GetResultMessage(num1 %  num2, "Division");
     }
+}
 }

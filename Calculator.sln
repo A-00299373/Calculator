@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator-API", "Calculator-API\Calculator-API.csproj", "{1F34B523-72F7-4E91-B948-EAB46118F649}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculator-API (1)", "Calculator-API", "{D7E8D656-8000-46F4-A893-0002E1D36053}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorAPITest", "Calculator-API\CalculatorAPITest\CalculatorAPITest.csproj", "{9BBC9056-E088-4683-A846-BBCA4453FC73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F34B523-72F7-4E91-B948-EAB46118F649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F34B523-72F7-4E91-B948-EAB46118F649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F34B523-72F7-4E91-B948-EAB46118F649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F34B523-72F7-4E91-B948-EAB46118F649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBC9056-E088-4683-A846-BBCA4453FC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBC9056-E088-4683-A846-BBCA4453FC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBC9056-E088-4683-A846-BBCA4453FC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBC9056-E088-4683-A846-BBCA4453FC73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BBC9056-E088-4683-A846-BBCA4453FC73} = {D7E8D656-8000-46F4-A893-0002E1D36053}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DF0E9C9-E25E-4B5A-AB61-C6B295640B1C}
+	EndGlobalSection
+EndGlobal
